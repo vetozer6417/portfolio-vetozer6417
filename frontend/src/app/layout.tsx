@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato, Fira_Code  } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const lato = Lato({
   subsets: ['latin'],
@@ -26,9 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fira_code.variable} ${lato.variable}`}>
+      <body className={`${fira_code.variable} ${lato.variable} flex flex-col min-h-screen`}>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

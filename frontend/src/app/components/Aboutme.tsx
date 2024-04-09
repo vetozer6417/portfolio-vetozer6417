@@ -15,7 +15,11 @@ export default function Aboutme() {
             </div>
             <div className="flex flex-row mt-5 items-center gap-x-3">
                 <Image src='/thai-flag-icon.png' width={30} height={30} alt="Thai Flag Icon"/>
-                <p className="text-[#212121] text-sm">Bangkok, Thailand</p>
+                <p className="text-[#212121] text-sm"><span className="font-medium">Address: </span>Bangkok, Thailand</p>
+            </div>
+            <div className="flex flex-row mt-5 items-center gap-x-3">
+                <Image src='/languages.png' width={30} height={30} alt="Languages Icon"/>
+                <p className="text-[#212121] text-sm"><span className="font-medium">Languages: </span>Thai (Native) | English (Proficient) </p>
             </div>
             </div>
       </section>

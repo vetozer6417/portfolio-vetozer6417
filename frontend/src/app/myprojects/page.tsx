@@ -23,8 +23,8 @@ function page() {
         }
     ]
     return (
-        <section className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen py-5">
-            <div className="bg-primary p-[2px] w-8/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <main className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen py-5">
+            <section className="bg-primary p-[2px] w-8/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">my projects</h2>
                     <div className="flex flex-row gap-x-1">
@@ -33,10 +33,10 @@ function page() {
                         <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                     </div>
                 </div>
-                <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 py-1 gap-y-5">
+                <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-1 pb-4 gap-y-5">
                     {
                         projectLists.map(({name,description,techStack,website}) => (
-                        <div className="flex flex-col pt-2">
+                        <div className="flex flex-col pt-2" key={name.trim()}>
                             <h3 className="font-lato font-semibold text-xl italic">{name}</h3>
                             <p className="text-zinc-600 text-sm mt-2 tracking-tight">
                                 {description}
@@ -56,8 +56,8 @@ function page() {
                     }
                     
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     );
 }
 

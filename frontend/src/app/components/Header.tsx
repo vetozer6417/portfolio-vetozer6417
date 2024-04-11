@@ -14,7 +14,7 @@ export default function Header() {
                 <Link href='/'>
                     <Image src='/main-logo.png' alt='Logo' width={215} height={76} draggable="false"/>
                 </Link>
-                <Link href='/'>
+                <Link href='/aboutme'>
                     <Image src='/social-icon.png' alt='Social media' width={45} height={45} draggable="false"/>
                 </Link>
             </div>

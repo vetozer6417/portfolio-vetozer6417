@@ -14,7 +14,7 @@ function ExperinceSkills() {
             <div className="row-span-5 w-full bg-primary p-[2px]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">experiences</h2>
-                    <Image src='./close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                    <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                 </div>
                 <div className="flex flex-col divide-y divide-zinc-500 divide-dashed gap-y-4">
                     <div className="p-2">
@@ -44,7 +44,7 @@ function ExperinceSkills() {
             <div className="row-span-3 col-start-2 bg-primary p-[2px]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">soft skills</h2>
-                    <Image src='./close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                    <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                 </div>
                 <div className="flex flex-col pt-1 gap-y-3 justify-center items-center">
                     {/* Fast Learner */}
@@ -93,7 +93,7 @@ function ExperinceSkills() {
             <div className="row-span-2 col-start-2 row-start-4 bg-primary p-[2px]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">education</h2>
-                    <Image src='./close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                    <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                 </div>
                 <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 py-5 gap-y-5">
                     <div className="flex flex-col">

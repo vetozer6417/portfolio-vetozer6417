@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Minimize from 'public/svg/minimize-icon.svg'
 import Close from 'public/svg/close-icon.svg'
+import HeaderButtonText from "../components/HeaderButtonText";
 
 function page() {
     const projectLists = [
@@ -24,9 +25,10 @@ function page() {
     ]
     return (
         <main className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen py-5">
+            <HeaderButtonText>my projects</HeaderButtonText>
             <section className="bg-primary p-[2px] w-8/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
-                    <h2 className="text-white ml-3">my projects</h2>
+                    <h2 className="text-white ml-3">things i've done with heart</h2>
                     <div className="flex flex-row gap-x-1">
                         <Close/>
                         <Minimize/>

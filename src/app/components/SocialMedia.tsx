@@ -16,7 +16,7 @@ function SocialMedia() {
     return (
         <section className="bg-primary p-[2px] w-5/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
-                    <h2 className="text-white ml-3">my projects</h2>
+                    <h2 className="text-white ml-3">let's get connected!</h2>
                     <div className="flex flex-row gap-x-1">
                         <Close/>
                         <Minimize/>

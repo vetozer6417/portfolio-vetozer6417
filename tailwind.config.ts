@@ -16,17 +16,8 @@ const config: Config = {
         sans: ['Fira Code', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         firacode: ['var(--font-firacode)'],
         lato: ['var(--font-lato)'],
-      },
-      
-      animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
-      },
-      keyframes: {
-        'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
-      }                    
+      }
+                    
     },
     fontSize: {
       sm: ['14px', '20px'],

@@ -9,13 +9,13 @@ export default function Header() {
             </div>
             <div className="flex flex-row mx-3 items-center justify-between">
                 <Link href='/myprojects'>
-                    <Image src='/projects-icon.png' alt='My Projects' width={45} height={45} draggable="false"/>
+                    <Image src='./projects-icon.png' alt='My Projects' width={45} height={45} draggable="false"/>
                 </Link>
                 <Link href='/'>
-                    <Image src='/main-logo.png' alt='Logo' width={215} height={76} draggable="false"/>
+                    <Image src='./main-logo.png' alt='Logo' width={215} height={76} draggable="false"/>
                 </Link>
                 <Link href='/aboutme'>
-                    <Image src='/social-icon.png' alt='Social media' width={45} height={45} draggable="false"/>
+                    <Image src='./social-icon.png' alt='Social media' width={45} height={45} draggable="false"/>
                 </Link>
             </div>
         </header>

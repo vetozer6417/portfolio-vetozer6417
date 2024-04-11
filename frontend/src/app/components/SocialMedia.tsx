@@ -20,7 +20,7 @@ function SocialMedia() {
                     <div className="flex flex-row gap-x-1">
                         <Close/>
                         <Minimize/>
-                        <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                        <Image src='./close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                     </div>
                 </div>
                 <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-1 pb-4 gap-y-2">

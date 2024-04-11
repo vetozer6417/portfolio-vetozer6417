@@ -87,6 +87,10 @@ web_modules/
 .next
 out
 
+# misc 
+gh-pages 
+gh-pages.pub
+
 # Nuxt.js build / generate output
 .nuxt
 dist

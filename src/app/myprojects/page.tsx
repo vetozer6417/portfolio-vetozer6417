@@ -1,7 +1,10 @@
+'use client'
 import Image from "next/image";
 import Minimize from 'public/svg/minimize-icon.svg'
 import Close from 'public/svg/close-icon.svg'
 import HeaderButtonText from "../components/HeaderButtonText";
+import Carousel from "../components/Carousel";
+import Link from "next/link";
 
 function page() {
     const projectLists = [
@@ -23,8 +26,15 @@ function page() {
             techStack: ['ReactJS', 'TailwindCSS', 'Express', 'MongoDB', 'Postman']
         }
     ]
+
+    const slides = [
+        '/carouselImages/kasalong-post_1.jpg',
+        '/carouselImages/kasalong-post_2.jpg',
+        '/carouselImages/kasalong-post_3.jpg',
+    ]
+
     return (
-        <main className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen py-5">
+        <main className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen">
             <HeaderButtonText>my projects</HeaderButtonText>
             <section className="bg-primary p-[2px] w-8/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
@@ -57,6 +67,38 @@ function page() {
                         ))
                     }
                     
+                </div>
+            </section>
+            <section className="bg-primary p-[2px] w-6/12 h-6/12  mt-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] pb-5">
+                <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
+                    <h2 className="text-white ml-3">projects gallery</h2>
+                    <div className="flex flex-row gap-x-1">
+                        <Close/>
+                        <Minimize/>
+                        <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                    </div>
+                </div>
+                <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-6 pb-4 gap-y-5 items-center">
+                    <Carousel>
+                        {
+                            slides.map((s, index) => (
+                                <img key={index} src={s} alt={`Slide ${index}`} width={550}/>
+                            ))
+                        }
+                    </Carousel>
+                </div>
+                <div className="flex justify-center">
+                    <button className='
+                    bg-primary 
+                    px-1 
+                    text-sm
+                    border-t-2
+                    border-l-2
+                    border-b-2 border-b-zinc-600
+                    border-r-2 border-r-zinc-600
+                    '>
+                        <a href='https://www.kasalongrice.com' target="_blank">www.kasalongrice.com</a>
+                    </button>
                 </div>
             </section>
         </main>

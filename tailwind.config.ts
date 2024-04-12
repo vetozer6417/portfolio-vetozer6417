@@ -11,13 +11,13 @@ const config: Config = {
       colors: {
         primary: '#bdbdbd',
         secondary: '#ffffff',
+        lightBg: '#e5e5e5',
+        greenBg: '#1e8080'
       },
       fontFamily: {
         sans: ['Fira Code', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        firacode: ['var(--font-firacode)'],
-        lato: ['var(--font-lato)'],
-      }
-                    
+        lato: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },         
     },
     fontSize: {
       sm: ['14px', '20px'],

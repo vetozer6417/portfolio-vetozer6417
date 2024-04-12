@@ -9,7 +9,7 @@ import CollabIcon from 'public/svg/collab.svg'
 // ขาด responsive
 function ExperinceSkills() {
     return (
-        <section className="bg-[#1e8080] p-5 grid grid-cols-2 grid-rows-5 gap-5">
+        <section className="bg-greenBg p-5 grid grid-cols-2 grid-rows-5 gap-5">
             {/* Experience */}
             <div className="row-span-5 w-full bg-primary p-[2px]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
@@ -40,7 +40,7 @@ function ExperinceSkills() {
                     <Button width={200} height={80}>Discover more</Button>
                 </div>
             </div>
-            {/* Skills */}
+            {/* Soft Skills */}
             <div className="row-span-3 col-start-2 bg-primary p-[2px]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">soft skills</h2>

@@ -12,9 +12,7 @@ function Button({ width, height, children } : { width: number, height: number, c
             flex items-center text-center
             w-${width} h-${height}`
         }>  
-            <Link href='/'>
-                <p className="text-white text-lg font-lato italic font-semibold">{children}</p>
-            </Link>
+            <p className="text-white text-lg font-lato italic font-semibold">{children}</p>
         </button>
     );
 }

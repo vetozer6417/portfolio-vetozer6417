@@ -4,7 +4,7 @@ import Minimize from 'public/svg/minimize-icon.svg'
 
 function Skills() {
     return (
-            <section className="grid grid-cols-3 grid-rows-1 gap-7 w-11/12 pb-10">
+            <section className="grid grid-cols-3 grid-rows-1 gap-7 w-8/12 pb-10">
                 <div className="bg-primary p-[2px] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                         <h2 className="text-white ml-3">programming languages</h2>

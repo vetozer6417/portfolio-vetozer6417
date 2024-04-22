@@ -2,11 +2,8 @@ import Image from "next/image";
 
 export default function Aboutme() {
     return (
-        <section className="grid md:grid-cols-1 lg:grid-cols-2 gap-4 bg-light px-5 py-5">
-            <div className="md:row-span-1 items-center w-full h-[500px] bg-primary">
-
-            </div>
-            <div className="md:row-span-1 flex flex-col justify-center">
+        <section className="flex items-center justify-center bg-light px-5 py-5">
+            <div className="flex flex-col justify-center">
                 <p className="text-lg">Hello I'm</p>
                 <h1 className="font-lato font-bold italic text-3xl lg:text-5xl">Theerat Punyasit</h1>
                 <p>Full Stack Web Developer and UX/UI Designer</p>

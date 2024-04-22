@@ -5,6 +5,7 @@ import BrainIcon from 'public/svg/brain.svg'
 import HeartIcon from 'public/svg/heart.svg'
 import BulbIcon from 'public/svg/bulb.svg'
 import CollabIcon from 'public/svg/collab.svg'
+import Link from "next/link";
 
 // ขาด responsive
 function ExperinceSkills() {
@@ -37,7 +38,8 @@ function ExperinceSkills() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center pt-2 pb-5">
-                    <Button width={200} height={80}>Discover more</Button>
+                    <Link href='/myprojects'><Button width={200} height={80}>Discover more</Button></Link>
+                    
                 </div>
             </div>
             {/* Soft Skills */}
@@ -46,43 +48,43 @@ function ExperinceSkills() {
                     <h2 className="text-white ml-3">soft skills</h2>
                     <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                 </div>
-                <div className="flex flex-col pt-1 gap-y-3 justify-center items-center">
+                <div className="flex flex-col pt-4 gap-y-3 justify-center items-left">
                     {/* Fast Learner */}
                     <div className="flex flex-row ml-1">
-                        <div className="w-2/12 flex items-center justify-center">
+                        <div className="w-1/12 flex items-center justify-center">
                             <BrainIcon/>
                         </div>
-                        <div className="w-10/12">
+                        <div className="w-11/12">
                             <h3 className="font-medium">Fast Learner</h3>
                             <p className="text-sm text-zinc-600">Can quickly learn and adapt myself to new technologies and programming languages.</p>
                         </div>
                     </div>
                     {/* Passionate */}
                     <div className="flex flex-row ml-1">
-                        <div className="w-2/12 flex items-center justify-center">
+                        <div className="w-1/12 flex items-center justify-center">
                             <HeartIcon/>
                         </div>
-                        <div className="w-10/12">
+                        <div className="w-11/12">
                             <h3 className="font-medium">Passionate</h3>
                             <p className="text-sm text-zinc-600">Can quickly learn and adapt myself to new technologies and programming languages.</p>
                         </div>
                     </div>
                     {/* Good Cmmu SKills */}
                     <div className="flex flex-row ml-1">
-                        <div className="w-2/12 flex items-center justify-center">
+                        <div className="w-1/12 flex items-center justify-center">
                             <BulbIcon/>
                         </div>
-                        <div className="w-10/12">
+                        <div className="w-11/12">
                             <h3 className="font-medium">Good Communication Skills</h3>
                             <p className="text-sm text-zinc-600">Can quickly learn and adapt myself to new technologies and programming languages.</p>
                         </div>
                     </div>
                     {/* Collaborative */}
                     <div className="flex flex-row ml-1">
-                        <div className="w-2/12 flex items-center justify-center">
+                        <div className="w-1/12 flex items-center justify-center">
                             <CollabIcon/>
                         </div>
-                        <div className="w-10/12">
+                        <div className="w-11/12">
                             <h3 className="font-medium">Collaborative</h3>
                             <p className="text-sm text-zinc-600">Can quickly learn and adapt myself to new technologies and programming languages.</p>
                         </div>

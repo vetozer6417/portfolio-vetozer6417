@@ -80,7 +80,7 @@ function ExperinceSkills() {
                         </div>
                     </div>
                     {/* Collaborative */}
-                    <div className="flex flex-row ml-1">
+                    <div className="flex flex-row ml-1 mb-5">
                         <div className="w-1/12 flex items-center justify-center">
                             <CollabIcon/>
                         </div>
@@ -101,6 +101,7 @@ function ExperinceSkills() {
                     <div className="flex flex-col">
                         <h3 className="font-lato font-semibold italic">B.Eng. Computer Engineering and Digital Technology</h3>
                         <p className="text-sm text-zinc-600"><span className="font-medium text-[#04008a] mr-5">Chulalongkorn University</span>Aug 2023 - present</p>
+                        <p className="text-sm font-medium text-[#04008a] mr-5"><span className="">GPA 3.50</span></p>
                     </div>
                     <div className="flex flex-col justify-center pt-3">
                         <h3 className="font-lato font-semibold italic">Samakkhi Witthayakhom School</h3>

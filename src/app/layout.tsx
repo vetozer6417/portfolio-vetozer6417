@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Lato, Fira_Code  } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

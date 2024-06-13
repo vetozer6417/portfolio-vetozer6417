@@ -41,8 +41,10 @@ function Skills() {
                             <li>React.js</li>
                             <li>Next.js</li>
                             <li>Express.js</li>
+                            <li>Nest.js</li>
                             <li>TailwindCSS</li>
                             <li>Git / Github</li>
+                            <li>Playwright</li>
                             <li>MongoDB</li>
                             <li>PostgreSQL</li>
                             <li>SQLite</li>

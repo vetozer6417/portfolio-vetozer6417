@@ -17,7 +17,14 @@ const config: Config = {
       fontFamily: {
         sans: ['Fira Code', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         lato: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-      },         
+      },
+      screens: {
+        "sm": '640px',
+        "md": '768px',
+        "lg": '1024px',
+        "xl": '1280px',
+        '2xl': '1536px'
+      }         
     },
     fontSize: {
       sm: ['14px', '20px'],

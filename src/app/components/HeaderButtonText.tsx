@@ -3,6 +3,9 @@ function HeaderButtonText({children} : {children: React.ReactNode}) {
         <div className="
             bg-primary
             hover:bg-zinc-400
+            hover:cursor-pointer
+            transition-all
+            duration-150
             px-5 
             py-1 
             mb-5 
@@ -12,7 +15,7 @@ function HeaderButtonText({children} : {children: React.ReactNode}) {
             border-b-2 border-b-zinc-600
             border-r-2 border-r-zinc-600
             ">
-                <h1 className="text-lg font-medium">{children}</h1>
+                <h1 className="text-sm md:text-md xl:text-lg font-medium">{children}</h1>
         </div>
     );
 }

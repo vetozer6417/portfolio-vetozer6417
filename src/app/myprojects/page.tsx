@@ -8,16 +8,15 @@ import Carousel from "../components/Carousel";
 function page() {
     const projectLists = [
         {
+            name: 'Charoen Pokphand Group (CP Group)',
+            description: 'Completed a summer internship during my freshman year as a full-stack developer in the Risk Management Office. My responsibilities included UX/UI design, coded frontend part, and automated end-to-end testing.',
+            techStack: ['ReactJS', 'Figma', 'Playwright']
+        },
+        {
             name: 'Kasalong Premium Thai Rice',
             description: 'Me and my co-worker have built this website using WordPress for MS HERITAGE GROUP CO., LTD, with responsive and multi-language web design .',
             techStack: ['Figma', 'Wordpress', 'Polylang Plugin', 'Elementor Plugin', 'Google Analytics', 'Semrush'],
             website: 'https://www.kasalongrice.com'
-        },
-        {
-            name: 'Expense Tracking Web Application',
-            description: 'An Expense Tracking Web-Application built with NodeJS, Express and MongoDB by me and my colleague. This project was built for the subject 2110222 Introduction To CEDT.',
-            techStack: ['NodeJS', 'Express', 'MongoDB'],
-            website: 'https://github.com/vetozer6417/final-project_expense-g20.git'
         },
         {
             name: 'Blog Web Application',
@@ -33,73 +32,79 @@ function page() {
     ]
 
     return (
-        <main className="bg-[#1e8080] flex flex-col justify-center items-center min-h-screen py-5">
-            <HeaderButtonText>my projects</HeaderButtonText>
-            <section className="bg-primary p-[2px] w-8/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-                <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
-                    <h2 className="text-white ml-3">things i've done with heart</h2>
-                    <div className="flex flex-row gap-x-1">
-                        <Close/>
-                        <Minimize/>
-                        <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
-                    </div>
-                </div>
-                <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-1 pb-4 gap-y-5">
-                    {
-                        projectLists.map(({name,description,techStack,website}) => (
-                        <div className="flex flex-col pt-2" key={name.trim()}>
-                            <h3 className="font-lato font-semibold text-xl italic">{name}</h3>
-                            <p className="text-zinc-600 text-sm mt-2 tracking-tight">
-                                {description}
-                            </p>
-                            <p className="text-zinc-600 text-sm mt-2">
-                                <span className="font-medium text-[#04008a]">Tech Stack: </span>
-                                {techStack.join(' | ')}
-                            </p>
-                            {website && (
-                                <p className="text-zinc-600 text-sm mt-2">
-                                    <a href={website} className="font-medium text-[#04008a] hover:underline" target="_blank" rel="noopener noreferrer">Visit the website</a>
-                                
-                                </p>
-                            )}
+        <main className="bg-[#1e8080] flex min-h-screen items-center justify-center w-screen py-5">
+            <div className="flex flex-col justify-center items-center 
+                xl:w-8/12 2xl:w-[1280px] w-10/12">
+                <HeaderButtonText>my projects</HeaderButtonText>
+                <section className="bg-primary p-[2px] 2xl:w-full shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
+                        <h2 className="text-white md:ml-3 ml-2 text-sm md:text-base">things i've done with heart</h2>
+                        <div className="flex flex-row gap-x-1">
+                            <Close/>
+                            <Minimize/>
+                            <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                         </div>
-                        ))
-                    }
-                    
-                </div>
-            </section>
-            <section className="bg-primary p-[2px] w-6/12 h-6/12  mt-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] pb-5">
-                <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
-                    <h2 className="text-white ml-3">projects gallery</h2>
-                    <div className="flex flex-row gap-x-1">
-                        <Close/>
-                        <Minimize/>
-                        <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
                     </div>
-                </div>
-                <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-6 pb-4 gap-y-5 items-center">
-                    <Carousel>
+                    <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-1 pb-4 gap-y-5">
                         {
-                            slides.map((s, index) => (
-                                <img key={index} src={s} alt={`Slide ${index}`} width={550}/>
+                            projectLists.map(({name,description,techStack,website}) => (
+                            <div className="flex flex-col pt-2" key={name.trim()}>
+                                <h3 className="font-lato font-semibold text-xl italic">{name}</h3>
+                                <p className="text-zinc-600 text-sm mt-2 tracking-tight">
+                                    {description}
+                                </p>
+                                <p className="text-zinc-600 text-sm mt-2">
+                                    <span className="font-medium text-[#04008a]">Tech Stack: </span>
+                                    {techStack.join(' | ')}
+                                </p>
+                                {website && (
+                                    <p className="text-zinc-600 text-sm mt-2">
+                                        <a href={website} className="font-medium text-[#04008a] hover:underline" target="_blank" rel="noopener noreferrer">Visit the website</a>
+                                    
+                                    </p>
+                                )}
+                            </div>
                             ))
                         }
-                    </Carousel>
-                </div>
-                <div className="flex justify-center">
-                    <button className='
-                    bg-primary 
-                    px-1 
-                    text-sm
-                    border-t-2
-                    border-l-2
-                    border-b-2 border-b-zinc-600
-                    border-r-2 border-r-zinc-600
-                    '>
-                        <a href='https://www.kasalongrice.com' target="_blank" rel="noopener noreferrer">www.kasalongrice.com</a>
-                    </button>
-                </div>
-            </section>
+                        
+                    </div>
+                </section>
+                <section className="bg-primary p-[2px] pb-5 
+                    2xl:w-6/12 xl:w-[600px] lg:w-[610px] md:w-[600px] w-full
+                    h-6/12 
+                    mt-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
+                        <h2 className="text-white md:ml-3 ml-2 text-sm md:text-base">projects gallery</h2>
+                        <div className="flex flex-row gap-x-1">
+                            <Close/>
+                            <Minimize/>
+                            <Image src='/close-button.png' alt='Close' width={20} height={10} className="mr-1"/>
+                        </div>
+                    </div>
+                    <div className="flex flex-col divide-y divide-zinc-500 divide-dashed md:px-5 px-4 pt-6 pb-4 gap-y-5 items-center">
+                        <Carousel>
+                            {
+                                slides.map((s, index) => (
+                                    <img key={index} src={s} alt={`Slide ${index}`} className="w-full"/>
+                                ))
+                            }
+                        </Carousel>
+                    </div>
+                    <div className="flex justify-center">
+                        <button className='
+                        bg-primary 
+                        px-1 
+                        text-sm
+                        border-t-2
+                        border-l-2
+                        border-b-2 border-b-zinc-600
+                        border-r-2 border-r-zinc-600
+                        '>
+                            <a href='https://www.kasalongrice.com' target="_blank" rel="noopener noreferrer">www.kasalongrice.com</a>
+                        </button>
+                    </div>
+                </section>
+            </div>
         </main>
     );
 }

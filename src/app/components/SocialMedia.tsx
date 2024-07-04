@@ -14,7 +14,9 @@ function SocialMedia() {
         { icon: <Location/>, text: 'Bangkok, Thailand'},
     ]
     return (
-        <section className="bg-primary p-[2px] w-4/12 h-6/12 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <section className="bg-primary p-[2px] w-10/12 md:w-6/12 lg:w-5/12 2xl:w-3/12 h-6/12 
+        xl:text-base text-sm
+        shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                 <div className='bg-gradient-to-r from-[#0d2962] to-[#9bc6e4] flex flex-row items-center justify-between'>
                     <h2 className="text-white ml-3">let's get connected!</h2>
                     <div className="flex flex-row gap-x-1">

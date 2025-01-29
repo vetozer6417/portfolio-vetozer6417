@@ -103,7 +103,7 @@ function page() {
                         border-b-2 border-b-zinc-600
                         border-r-2 border-r-zinc-600
                         '>
-                            <a href='https://www.kasalongrice.com' target="_blank" rel="noopener noreferrer">www.kasalongrice.com</a>
+                            <a href='https://www.kasalongrice.com' target="_blank" rel="noopener noreferrer">www.zongggd.com</a>
                         </button>
                     </div>
                 </section>

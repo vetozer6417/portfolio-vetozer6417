@@ -13,19 +13,22 @@ function page() {
             techStack: ['ReactJS', 'Figma', 'Playwright']
         },
         {
+            name: 'ซองดี (Zongggd) E-Commerce Website',
+            description: 'Worked directly with customers to understand their needs and designed/developed a print-on-demand e-commerce website. Integrated the Paysolution payment gateway. Deployed the platform on DigitalOcean and AWS. leveraging services like Amplify, Cognito, CloudFront, and S3.',
+            techStack: ['Next.js', 'Nest.js', 'AWS', 'DigitalOcean', 'Paysolution']
+        },
+        {
             name: 'Kasalong Premium Thai Rice',
             description: 'Me and my co-worker have built this website using WordPress for MS HERITAGE GROUP CO., LTD, with responsive and multi-language web design .',
             techStack: ['Figma', 'Wordpress', 'Polylang Plugin', 'Elementor Plugin', 'Google Analytics', 'Semrush'],
             website: 'https://www.kasalongrice.com'
         },
-        {
-            name: 'Blog Web Application',
-            description: 'A Simple Blog Web Apllication built with ReactJS, Express, MongoDB and TailwindCSS. This project was built to enhance my front-end web developing skills.',
-            techStack: ['ReactJS', 'TailwindCSS', 'Express', 'MongoDB', 'Postman']
-        }
     ]
 
     const slides = [
+        '/carouselImages/ig-post-3.jpg',
+        '/carouselImages/ig-post-2.jpg',
+        '/carouselImages/ig-post2-2.jpg',
         '/carouselImages/kasalong-post_1.jpg',
         '/carouselImages/kasalong-post_2.jpg',
         '/carouselImages/kasalong-post_3.jpg',

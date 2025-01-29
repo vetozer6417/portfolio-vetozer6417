@@ -26,7 +26,6 @@ function Skills() {
                             <li>C++</li>
                             <li>JAVA</li>
                             <li>SQL</li>
-                            
                         </ul>
                     </div>
                 </div>
@@ -67,10 +66,13 @@ function Skills() {
                     <div className="flex flex-col divide-y divide-zinc-500 divide-dashed px-2 pt-1 pb-4 gap-y-5">
                         <ul className="text-zinc-700 pl-2 pt-2 text-sm xl:text-base">
                             <li>Figma</li>
+                            <li>AWS</li>
+                            <li>Google Cloud</li>
+                            <li>DigitalOcean</li>
+                            <li>Zapier Automation</li>
                             <li>Wordpress</li>
+                            <li>Shopify</li>
                             <li>Adobe Photoshop</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Premiere Pro</li>
                             <li>Semrush</li>
                             <li>Meta Business Suite</li>
                         </ul>
